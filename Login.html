@@ -9,7 +9,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.min.css">
     <link rel="stylesheet" href="Css/Header.css">
+    <link rel="stylesheet" href="Css/Styles.css">
     <link rel="stylesheet" href="Css/Login.css">
+    <link rel="stylesheet" href="Css/Footer.css">
     <title>Hotel Terra Mia | Restaurante</title>
   </head>
   <body>
@@ -30,45 +32,148 @@
         </nav>
     </header>
 
-<div class="container" id="container">
-  <div class="form-container sign-up-container">
-    <form action="#">
-      <h1>Registrar</h1>
-      <input type="text" placeholder="Name" />
-      <input type="email" placeholder="Email" />
-      <input type="password" placeholder="Password" />
-      <button>Ingresar</button>
-    </form>
-  </div>
-  <div class="form-container sign-in-container">
-    <form action="#">
-      <h1>Ingresar</h1>
-      <input type="email" placeholder="Email" />
-      <input type="password" placeholder="Password" />
-      <a href="#">Olvido su Contraseña?</a>
-      <button>Entrar</button>
-    </form>
-  </div>
-  <div class="overlay-container">
-    <div class="overlay">
-      <div class="overlay-panel overlay-left">
-        <h1>Hola</h1>
-        <h1>Bienvenido a</h1>
-        <h1>Hotel Terra Mia</h1> 
-        <button class="ghost mt-4" id="signIn">Entrar</button>
+    <section class="form-login p-5 mt-5">
+      <div class="container mb-5 mt-5" id="container">
+        <div class="form-container sign-up-container">
+          <form action="#">
+            <h1>Registrar</h1>
+            <input type="text" placeholder="Name" />
+            <input type="email" placeholder="Email" />
+            <input type="password" placeholder="Password" />
+            <button>Ingresar</button>
+          </form>
+        </div>
+        <div class="form-container sign-in-container">
+          <form action="#">
+            <h1>Ingresar</h1>
+            <input type="email" placeholder="Email" />
+            <input type="password" placeholder="Password" />
+            <a href="#">Olvido su Contraseña?</a>
+            <button>Entrar</button>
+          </form>
+        </div>
+        <div class="overlay-container">
+          <div class="overlay">
+            <div class="overlay-panel overlay-left">
+              <h1>Hola</h1>
+              <h1>Bienvenido a</h1>
+              <h1>Hotel Terra Mia</h1> 
+              <button class="ghost mt-4" id="signIn">Entrar</button>
+            </div>
+            <div class="overlay-panel overlay-right">
+              <h1>Hola</h1>
+              <h1>Bienvenido a</h1>
+              <h1>Hotel Terra Mia</h1> 
+              <button class="ghost mt-4" id="signUp">Registrar</button>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="overlay-panel overlay-right">
-        <h1>Hola</h1>
-        <h1>Bienvenido a</h1>
-        <h1>Hotel Terra Mia</h1> 
-        <button class="ghost mt-4" id="signUp">Registrar</button>
+    </section>
+
+
+
+
+<!--Seccion de Informacion-->
+<section class="container-lg bg-informacion">
+  <div class="row">
+    <div class="col-2 text-center pt-4">
+      <img class="icons" src="Img/Icons/informacion-2.png" alt="icon-info">
+    </div>  
+    <div class="col-10 pt-3">
+      <p class="text text-white">A partir del 6 de abril de 2020, se aplicarán las condiciones de cancelación de 
+        la opción que elijas, independientemente del coronavirus. Te recomendamos reservar
+         una opción con cancelación gratis por si tus planes cambian.</p>
+    </div>   
+  </div>
+</section>
+<!--Fin Seccion de Informacion-->
+
+
+
+
+  <!--Seccion Footer-->
+<footer>
+  <div class="container-lg">
+    <div class="row justify-content-center">
+      <div class="col mt-5">
+        <div class="d-flex flex-column bd-highlight mb-3">
+          <div class="mb-auto bd-highlight">
+            <div class="row">
+              <div class="col-4">
+                <h1 class="mb-0">60+</h1>
+              </div>
+              <div class="col-8">
+                <h3 class="titulo mb-0">Alojamientos</h3>
+                <p class="text d-inline">con normas de calidad </p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="bd-highlight">
+            <div class="row">
+              <div class="col-4">
+                <h1 class="mb-0">190+</h1>
+              </div>
+              <div class="col-8">
+                <h3 class="titulo mb-0">Clientes</h3>
+                <p class="text d-inline">que nos visitan desde todo Chile</p>
+              </div>
+            </div>
+          </div>
+      </div>
+      </div>
+      <div class="col mt-5">
+        <div class="d-flex align-items-end flex-column bd-highlight mb-3">
+          <div class="bd-highlight"><p class="mb-0">+56 912345678</p></div>
+          <div class="bd-highlight"> <p class="mb-0">hotelterramia@gmail.com</p></div>
+          <div class="bd-highlight"><p class="mb-0">info@hotelterramia.cl</p></div>
+          <div class="bd-highlight"><p class="mb-0">21 de mayo 280 | San Antonio</p></div>
+            <div class="row align-items-center p-3">
+              <div class="col text-center">
+                <img class="icons-rrss" src="Img/RRSS/booking_com_icon_logo.png" alt="iconoBooking">
+              </div>
+              <div class="col text-center">
+                <img class="icons-rrss" src="Img/RRSS/Facebook.png" alt="iconoFacebook">
+              </div>
+              <div class="col text-center">
+                <img class="icons-rrss" src="Img/RRSS/Instagram.png" alt="iconoInstagram">
+              </div>
+              <div class="col text-center">
+                <img class="icons-rrss" src="Img/RRSS/tripadvisor-logotype.png" alt="iconotripadvisor">
+              </div>
+            </div>  
+        </div>
       </div>
     </div>
   </div>
-</div>
-
-
-
+  
+  <hr class="line">
+  <div class="row align-items-center p-3">
+      <div class="col text-center">
+        <img class="icons" src="Img/Tarjetas/Visa-Logotipo-2006–2014.png" alt="visa">
+      </div>
+      <div class="col text-center">
+        <img class="icons" src="Img/Tarjetas/Mastercard-Simbolo.png" alt="MasterCard">
+      </div>
+      <div class="col text-center">
+        <img class="icons" src="Img/Tarjetas/Maestro_logo.png" alt="Maestro">
+      </div>
+      <div class="col text-center">
+        <img class="icons" src="Img/Tarjetas/Diners-Club-International-Logo.png" alt="DinnerClub">
+      </div>
+      <div class="col text-center">
+        <img class="icons" src="Img/Tarjetas/american_express_logo_wordmark_detail.png" alt="AmericanExpress">
+      </div>
+      <div class="col text-center">
+        <img class="icons" src="Img/Tarjetas/Logo-Redcompra-Prepago.png" alt="RedCompra">
+      </div>
+  </div>
+  </footer>
+  <nav class="bg-light p-2">
+    <p class="text-center">© 2021 Hotel Terra Mia - Boutique. Todos los derechos reservados.</p>
+  </nav>
+  <!--Fin Seccion Footer-->
 
 
     <!-- Optional JavaScript; choose one of the two! -->
