@@ -1,0 +1,93 @@
+:root{
+    --colorPrimario: #083B66;
+    --colorSecundario: #B73719;
+    --colorTerciario: #FC9A32;
+    --colorNegro: #000000;
+    --colorBlanco: #FFFFFF;
+}
+
+
+
+.div-reserva{
+    position:absolute;
+    top: 80%;
+    left: 25%;
+    z-index: 2;
+}
+
+.input-group{
+    height: 70px;
+}
+
+.btnCotizar{
+    width: 130px;
+}
+
+
+.carousel-inner{
+    height: 100vh;
+    
+}
+
+/*min-height: calc(100vh - 90px);
+  border-bottom: 1px solid white;
+  background-color: #eae;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+*/
+
+
+.container-slider{
+    width: 50%;
+    height: 100vh;
+    left: 50%;
+    position: absolute;
+    background-color: #000000;
+    top: -100vh;
+    z-index: 3;
+    opacity: 0.8;
+}
+/*
+background-color: rgba(0, 0, 0, 0.8);
+  content: ' ';
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  top: 0;
+  left: 0;
+  z-index: 2;*/
+
+  .card{
+      border: none;
+  }
+
+  .titulo{
+    font-family: luxia;
+    font-size: 1.9rem ;
+  }
+
+  .sub-titulo{
+      font-family: luxia;
+      font-size: 1.4rem;
+  }
+
+  .card-text{
+      font-family: luxia;
+      font-size: 1.1rem;
+  }
+
+  .icons{
+      width: 40px;
+      height: auto;
+  }
+  .text{
+      font-family: luxia;
+      font-size: 1.1rem;
+  }
+  .bg-informacion{
+      background-color: var(--colorPrimario);
+  }
+  
