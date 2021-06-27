@@ -6,6 +6,10 @@
     --colorBlanco: #FFFFFF;
 }
 
+*{
+    padding: 0;
+    margin: 0;
+}
 
 
 .div-reserva{
@@ -60,6 +64,68 @@ background-color: rgba(0, 0, 0, 0.8);
   left: 0;
   z-index: 2;*/
 
+  .tabs-rooms{
+    width: 90%;
+    height: 500px;
+    position: relative;
+    /*margin: 100px auto;*/
+    overflow: hidden;
+  }
+
+  .btn-box{
+      display: flex;
+      border-bottom: 1px solid var(--colorTerciario);
+  }
+
+  .btn-box button{
+      background-color: transparent;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      font-size: 20px;
+      font-weight: bold;
+      padding: 10px;
+  }
+
+  .content-left img{
+    width: 100%;
+  }
+
+  .content-left{
+      flex-basis: 50%;
+  }
+  .content-right{
+      flex-basis: 50%;
+  }
+
+  .content{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 5% auto;
+      position: absolute;
+      transform: translate(100%);
+      transition: 0.3s;
+  }
+
+    #content_one{
+        transform: translateX(0px);
+    }
+
+  .btn-submit{
+      width: 150px;
+      height: auto;
+      background-color: var(--colorPrimario);
+      color: var(--colorBlanco);
+      font-family: luxia;
+      border: none;
+  }
+
+  #btn_one{
+      color: var(--colorTerciario);
+  }
+
+
   .card{
       border: none;
   }
@@ -71,7 +137,7 @@ background-color: rgba(0, 0, 0, 0.8);
 
   .sub-titulo{
       font-family: luxia;
-      font-size: 1.4rem;
+      font-size: 1.3rem;
   }
 
   .fotos-cinta{
@@ -101,4 +167,25 @@ background-color: rgba(0, 0, 0, 0.8);
   .bg-informacion{
       background-color: var(--colorPrimario);
   }
-  
+
+  #CalltoAction{
+    background-image: url('../Img/foto_1.jpg');
+  }
+
+  .CTA{
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      text-align: center;
+      position: relative;
+  }
+
+  .CTA::before{
+      background-color: rgba(0,0,0,0.8);
+      position:absolute;
+      content: '';
+      width: 100%;
+      height: auto;
+      top: 0;
+      left: 0;
+  }

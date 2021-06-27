@@ -7,7 +7,6 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.min.css">
     <link rel="stylesheet" href="Css/Header.css">
     <link rel="stylesheet" href="Css/Styles.css">
     <link rel="stylesheet" href="Css/Footer.css">
@@ -124,13 +123,83 @@
 </section>
 <!-- Fin Seccion Segundo Titulo-->
 
+<!--Seccion Tabs de Habitaciones-->
+<section class="justify-content-center pb-5">
+  <div class="tabs-rooms mx-auto">
+    <div class="btn-box justify-content-center">
+      <button id="btn_one" class="sub-titulo" onclick="singleRoom()">Habitacion Simple</button>
+      <button id="btn_two" class="sub-titulo" onclick="dobleRoom()">Habitacion Doble</button>
+      <button id="btn_three" class="sub-titulo" onclick="familyRoom()">Habitacion Familiar</button>
+    </div>
+    
+    <div class="content" id="content_one">
+      <div class="row col-12 col-lg-12 col-md-12">
+        <div class="content-left mx-auto">
+          <img class="img-fluid" src="Img/hotel-terra-mia-11.jpg" alt="habitacion">
+        </div>
+        <div class="content-right">
+          <h1 class="titulo">Habitacion Simple</h1>
+          <p class="text p-0">Habitación individual  con todo los comodidad que necesita nuestros pasajeros.</p>
+          <hr class="btn-box">
+          <p class="text p-0">Capacidad estandar - 2 personas</p>
+          <hr class="btn-box">
+          <p class="text p-0">No se puede fumar en las habitaciones.
+            Cada habitación cuenta con baño privado, TV – Cable, Wifi, Aire Acondicionado
+          </p>
+          <h3 class="text-danger titulo">Desde $ 49.000</h3>
+          <button type="submit" class="p-1 btn-submit" >Cotiza</button>
+        </div>
+      </div>  
+    </div>
+    <div class="content" id="content_two">
+      <div class="row col-12 col-lg-12 col-md-12 col-sm-12">
+        <div class="content-left mx-auto">
+          <img src="Img/hotel-terra-mia-22.jpg" alt="habitacion">
+        </div>
+        <div class="content-right">
+          <h1 class="titulo">Habitacion Doble</h1>
+          <p class="text p-0">Habitación doble  con todo los comodidad que necesita nuestros pasajeros.</p>
+          <hr class="btn-box">
+          <p class="text p-0">Capacidad estandar - 4 personas</p>
+          <hr class="btn-box">
+          <p class="text p-0">No se puede fumar en las habitaciones.
+            Cada habitación cuenta con baño privado, TV – Cable, Wifi, Aire Acondicionado
+          </p>
+          <h3 class="text-danger titulo">Desde $ 59.000</h3>
+          <button type="submit" class="p-1 btn-submit">Cotiza</button>
+        </div>
+      </div>  
+    </div>
+    <div class="content" id="content_three">
+      <div class="row col-12 col-lg-12 col-md-12 col-sm-12">
+        <div class="content-left mx-auto">
+          <img src="Img/hotel-terra-mia-23.jpg" alt="habitacion">
+        </div>
+        <div class="content-right">
+          <h1 class="titulo">Habitacion Familiar</h1>
+          <p class="text p-0">Habitación familiar  con todo los comodidad que necesita nuestros pasajeros.</p>
+          <hr class="btn-box">
+          <p class="text p-0">Capacidad estandar - 5 personas</p>
+          <hr class="btn-box">
+          <p class="text p-0">No se puede fumar en las habitaciones.
+            Cada habitación cuenta con baño privado, TV – Cable, Wifi, Aire Acondicionado
+          </p>
+          <h3 class="text-danger titulo">Desde $ 69.000</h3>
+          <button type="submit" class="p-1 btn-submit">Cotiza</button>
+        </div>
+      </div>  
+    </div>
+  </div>
+</section>
+<!--Fin Seccion Tabs de Habitaciones-->
 
+<!--Seccion Call to Action-->
+
+<!--Fin Seccion Call to Action-->
 
 
 <!--Seccion Fotos-->
-<section>
-  <div class="container-fluid mt-5">
-    <div class="row">
+<section class="container-fluid mt-5 pt-5 p-0">
       <div class="d-flex">
         <div class="fotos-cinta"><img class="img-fluid" src="Img/foto_2.jpg" alt="foto_1"></div>
         <div class="fotos-cinta"><img class="img-fluid" src="Img/foto_1.jpg" alt="foto_2"></div>
@@ -138,14 +207,12 @@
         <div class="fotos-cinta"><img class="img-fluid" src="Img/foto_4.jpg" alt="foto_4"></div>
         <div class="fotos-cinta"><img class="img-fluid" src="Img/foto_5.jpg" alt="foto_5"></div>
       </div>
-    </div>
-  </div>
 </section>
 <!--Seccion Fotos-->
 
 
 <!--Seccion Mapa Google-->
-<section class="container-md mt-5">
+<section class="container-md mt-5 pt-5">
   <div class="ubicacion-Google mb-5"> 
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.8723467921154!2d-71.61425268458663!3d-33.582663511696474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x966238e444006f05%3A0x613221305cb5ccdc!2sTerra%20Mia%20Hotel%20Restaurant%20East!5e0!3m2!1ses-419!2scl!4v1624671611980!5m2!1ses-419!2scl" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
   </div>
@@ -259,6 +326,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="Js/index.js"></script>
 
     <script type="text/javascript">
         window.addEventListener("scroll", function(){
@@ -267,6 +335,8 @@
         }
         )
         </script>
+
+
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
