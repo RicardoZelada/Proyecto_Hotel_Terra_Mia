@@ -41,3 +41,27 @@ function familyRoom(){
         content_2.style.transitionDelay = "0s";
         content_3.style.transitionDelay = "0.3s";
     }
+
+    window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+    }
+    );
+
+    $(document).ready(function(){
+        $('.menu-toggle').click(function(){
+            $('.menu-toggle').toggleClass('active');
+            $('.nav').toggleClass('show')
+        })
+    })
+
+
+      document.addEventListener( 'DOMContentLoaded', function () {
+		new Splide( '.splide',{
+      autoplay:"true",
+      type:"loop",
+      width: "100%"
+    } ).mount();
+	} );
+      
+    
