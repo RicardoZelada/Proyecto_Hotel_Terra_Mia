@@ -17,43 +17,19 @@
   <body>
 
     <header>
-        <nav>
-            <a href="index.html" class="logo">LOGO</a>
-        </nav>
-        <nav class="navbar">
+      <a href="index.html"><img class="logo" src="Img/Logo_Terra_Mia.png" alt="Logo"></a>
+        <div class="menu-toggle"></div>
+          <nav>
             <ul>
-            <li><a class="text-white" href="index.html">Inicio</a></li>
-            <li><a class="text-white" href="Habitaciones.html">Habitaciones</a></li>
-            <li><a class="text-white" href="Servicios.html">Servicios</a></li>
-            <li><a class="text-white" href="Nosotros.html">Nosotros</a></li>
-            <li><a class="text-white" href="Contacto.html">Contacto</a></li>
-            <a href="Login.html"><img class="icon" src="Img/Icons/avatar.png" alt="icono_usuario"></a>
-        </ul>
-        </nav>
+              <li><a class="text-white" href="index.html">Inicio</a></li>
+              <li><a class="text-white" href="Habitaciones.html">Habitaciones</a></li>
+              <li><a class="text-white active" href="Servicios.html">Servicios</a></li>
+              <li><a class="text-white" href="Nosotros.html">Nosotros</a></li>
+              <li><a class="text-white" href="Contacto.html">Contacto</a></li>
+              <a href="Login.html"><img src="Img/Icons/avatar.png" alt="icono_usuario"></a>
+            </ul>
+          </nav>
     </header>
-
-    <section id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="Img/hotel-terra-mia-19.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="Img/hotel-terra-mia-12.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="Img/hotel-terra-mia-6.jpg" class="d-block w-100" alt="...">
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </a>
-  </section>
-
 
 
 
@@ -163,14 +139,8 @@
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <script src="fontawesome-free-5.15.1-web/js/all.min.js"></script>
+    <script src="Js/index.js"></script>
 
-    <script type="text/javascript">
-        window.addEventListener("scroll", function(){
-            var header = document.querySelector("header");
-            header.classList.toggle("sticky", window.scrollY > 0);
-        }
-        )
-        </script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--

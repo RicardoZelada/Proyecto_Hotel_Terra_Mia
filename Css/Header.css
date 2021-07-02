@@ -125,11 +125,35 @@ header.sticky ul li a{
     position: relative;
   }
 
-  
   .splide{
     width: 100%;
   }
   .splide__track{
-      height: 90vh;
+      height: 100vh;
   }
 
+
+/*
+  .swiper-container {
+    width: 100%;
+    
+  }
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+  }
+
+  @media(max-width:1210px){
+    .contBanner{
+      display: none;
+    }
+  }*/
+
+  /*@media(max-width:1209px){
+    .swiper-container{
+      display: block;
+    }
+  }
+*/

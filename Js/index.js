@@ -41,21 +41,21 @@ function familyRoom(){
         content_2.style.transitionDelay = "0s";
         content_3.style.transitionDelay = "0.3s";
     }
-
+//--------------------------------------
     window.addEventListener("scroll", function(){
         var header = document.querySelector("header");
         header.classList.toggle("sticky", window.scrollY > 0);
     }
     );
-
+//--------------------------------------
     $(document).ready(function(){
         $('.menu-toggle').click(function(){
             $('.menu-toggle').toggleClass('active');
-            $('.nav').toggleClass('show')
+            $('nav').toggleClass('active')
         })
     })
 
-
+//--------------------------------------
       document.addEventListener( 'DOMContentLoaded', function () {
 		new Splide( '.splide',{
       autoplay:"true",
@@ -63,5 +63,23 @@ function familyRoom(){
       width: "100%"
     } ).mount();
 	} );
-      
+
+//--------------------------------------
+var swiper = new Swiper('.swiper-container', {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
+
     
