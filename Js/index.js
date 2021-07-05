@@ -42,19 +42,18 @@ function familyRoom(){
         content_3.style.transitionDelay = "0.3s";
     }
 //--------------------------------------
-    window.addEventListener("scroll", function(){
+       
+        window.addEventListener("scroll", function(){
         var header = document.querySelector("header");
         header.classList.toggle("sticky", window.scrollY > 0);
-    }
-    );
-//--------------------------------------
-    $(document).ready(function(){
-        $('.menu-toggle').click(function(){
-            $('.menu-toggle').toggleClass('active');
-            $('nav').toggleClass('active')
-        })
-    })
+        });
 
+        $(document).ready(function(){
+            $('.toggle').click(function(){
+                $('ul').toggleClass('active');
+            })
+            })
+     
 //--------------------------------------
       document.addEventListener( 'DOMContentLoaded', function () {
 		new Splide( '.splide',{
