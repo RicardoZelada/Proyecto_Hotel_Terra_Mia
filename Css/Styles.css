@@ -33,17 +33,6 @@
     
 }
 
-/*min-height: calc(100vh - 90px);
-  border-bottom: 1px solid white;
-  background-color: #eae;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  text-align: center;
-*/
-
-
 .container-slider{
     width: 50%;
     height: 100vh;
@@ -54,15 +43,6 @@
     z-index: 3;
     opacity: 0.8;
 }
-/*
-background-color: rgba(0, 0, 0, 0.8);
-  content: ' ';
-  position: absolute;
-  width: 100%;
-  height: 90%;
-  top: 0;
-  left: 0;
-  z-index: 2;*/
 
   .tabs-rooms{
     width: 90%;
@@ -124,20 +104,33 @@ background-color: rgba(0, 0, 0, 0.8);
   #btn_one{
       color: var(--colorTerciario);
   }
-
-
   .card{
       border: none;
   }
 
-  .titulo{
+  .titulo, .sub-titulo, .titulo-lateral,.text-grilla-contacto, .card-text{
     font-family: luxia;
+  }
+
+  .titulo{
     font-size: 1.9rem ;
   }
 
   .sub-titulo{
-      font-family: luxia;
       font-size: 1.3rem;
+  }
+
+  .titulo-lateral{
+      margin-top: 50%;
+  }
+
+  main section div p{
+      margin-top: 15%;
+      font-family: luxia;
+  }
+
+  main section img{
+      margin-top: 10%;
   }
 
   .fotos-cinta{
@@ -147,7 +140,6 @@ background-color: rgba(0, 0, 0, 0.8);
   }
 
   .card-text{
-      font-family: luxia;
       font-size: 1.1rem;
   }
 
@@ -191,11 +183,37 @@ background-color: rgba(0, 0, 0, 0.8);
   }
 
   .content-services{
-      width: 80%;
-      height: 400px;
+    background-image: url(../Img/foto_9.png);
+  }
+  .content-contacto{
+    background-image: url(../Img/foto_10.png);
   }
 
-  img{
-      width: 100%;
-      height: auto;
+
+  .content-services, .content-contacto{
+      width: 70%;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      height: 400px;
+      margin: 0 auto;
   }
+
+  @media (max-width: 1097px){
+    .content-services, .content-contacto{
+        width: 80%;
+        height: 350px;
+    }}
+
+    @media (max-width: 874px){
+        .content-services, .content-contacto{
+            width: 80%;
+            height: 300px;
+        }}
+    @media (max-width: 600px){
+        .content-services, .content-contacto{
+            width: 100%;
+        }}    
+          
+
+
+

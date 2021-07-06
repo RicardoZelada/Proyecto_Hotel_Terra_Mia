@@ -52,24 +52,115 @@
 </section>
 <!-- Fin Seccion Segundo Titulo-->
 
-<!-- Seccion de Fotos-->
-<section class="container-fluid bg-info mt-5"> 
-  <div class="row justify-content-center">
-    <div class="content-services bg-dark col-12 col-lg-10 col-md-10 col-sm-12">
-     
+<!-- Seccion de Fotos y Parrafo-->
+<section class="container-md content-services mt-3"> 
+</section>
+
+<section class="container mt-5">
+  <div class="row justify-content-center p-4">
+    <div class="col-lg-10 col-md-12 col-sm-12 justify-content-center">
+      <p class="card-text text-center">Contamos con uno de nuestros principales servicios como es 
+        Terra Mia Ristorante, ven y disfruta de nuestros exquisitos platos con una de las mas 
+        privilegiadas vista de San Antonio.   </p>
     </div>
   </div>
 </section>
-<!-- Fin Seccion de Fotos  <img class="img-fluid" src="Img/foto_7.jpg" alt="foto-principal-servicios">-->
+<!-- Fin Seccion de Fotos y Parrofo -->
+
+<!--Seccion Principales Servicios-->
+<section class="container-fluid mt-5 mb-5 p-5">
+  <div class="row">
+    <div class="col-6 col-lg-3 col-md-4 col-sm-6 d-flex mb-2">
+      <h1 class="titulo-lateral">PRINCIPALES SERVICIOS</h1>
+    </div>
+    <div class="col-6 col-lg-3 col-md-4 col-sm-6 mb-2">
+      <img class="img-fluid" src="Img/foto_servicios_3.png" alt="foto_co-work">
+    </div>
+    <div class="col-6 col-lg-3 col-md-4 col-sm-6">
+      <img class="img-fluid" src="Img/foto_servicios_2.png" alt="foto_restaurante">
+    </div>
+    <div class="col-6 col-lg-3 col-md-4 col-sm-6">
+      <img class="img-fluid" src="Img/foto_servicios_1.png" alt="foto_bar">
+    </div>
+  </div>
+</section>
+<!--Seccion Principales Servicios-->
+
+<!-- Seccion Segundo Titulo-->
+<section class="container mt-5">
+  <div class="row justify-content-center p-4">
+    <div class="col-lg-10 col-md-8 col-sm-12 justify-content-center">
+      <h1 class="titulo text-center">
+        SERVICIOS ADICIONALES 
+      </h1>
+        <p class="card-text text-center">Hotel Terra Mia - Boutique ofrece servicios que vienen 
+          incorporados con cada reserva de una habitación, pero también tenemos servicios de pago 
+          que se añaden a su cargo.  </p>
+    </div>
+  </div>
+</section>
+<!-- Fin Seccion Segundo Titulo-->
 
 
+<!--Seccion Tabs de Servicios-->
+<section class="justify-content-center pb-5">
+  <div class="tabs-rooms mx-auto">
+    <div class="btn-box justify-content-center">
+      <button id="btnone" class="sub-titulo" onclick="payServices()">Servicios de Pago</button>
+      <button id="btntwo" class="sub-titulo" onclick="addServices()">Servicios Incorporados</button>
+    </div>
 
+    <section class="content mt-5 mb-5 p-5" id="container_one">
+      <div class="row">
+        <div class="col-6 col-lg-3 col-md-4 col-sm-6">
+          <img class="img-fluid" src="Img/foto_servicios_4.png" alt="equitacion">
+        </div>
+        <div class="col-6 col-lg-3 col-md-4 col-sm-6">
+          <img class="img-fluid" src="Img/foto_servicios_5.png" alt="golf">
+        </div>
+        <div class="col-6 col-lg-3 col-md-4 col-sm-6">
+          <img class="img-fluid" src="Img/foto_servicios_6.png" alt="taxi">
+        </div>
+        <div class="col-6 col-lg-3 col-md-4 col-sm-6">
+          <img class="img-fluid" src="Img/foto_servicios_7.png" alt="pesca">
+        </div>
+      </div>
+    </section>
 
+    <section class="content mt-5 mb-5 p-5" id="container_two">
+      <div class="row">
+        <div class="col-6 col-lg-3 col-md-4 col-sm-6 mb-2">
+          <img class="img-fluid" src="Img/foto_servicios_8.png" alt="sala_juegos">
+        </div>
+        <div class="col-6 col-lg-3 col-md-4 col-sm-6 mb-2">
+          <img class="img-fluid" src="Img/foto_servicios_9.png" alt="biblioteca">
+        </div>
+        <div class="col-6 col-lg-3 col-md-4 col-sm-6">
+          <img class="img-fluid" src="Img/foto_servicios_10.png" alt="parking">
+        </div>
+        <div class="col-6 col-lg-3 col-md-4 col-sm-6">
+          <img class="img-fluid" src="Img/foto_servicios_11.png" alt="karaoke">
+        </div>
+      </div>
+    </section>  
+  </div>
+</section>
+<!--Seccion Tabs de Servicios-->
 
-
-
-
-
+<!--Seccion de Informacion-->
+<section class="container bg-informacion">
+  <div class="row">
+    <div class="col-2 text-center pt-4">
+      <img class="icons" src="Img/Icons/informacion-2.png" alt="icon-info">
+    </div>  
+    <div class="col-10 pt-3">
+      <p class="text text-white">A partir del 6 de abril de 2020, se aplicarán las condiciones de cancelación de 
+        la opción que elijas, independientemente del coronavirus. Te recomendamos reservar
+         una opción con cancelación gratis por si tus planes cambian.</p>
+    </div>   
+  </div>
+</section>
+<!--Fin Seccion de Informacion-->
 
 <!--Seccion Footer-->
 <footer>
@@ -165,6 +256,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 
     <script src="Js/index.js"></script>
+    <script src="Js/Servicios.js"></script>
 
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
