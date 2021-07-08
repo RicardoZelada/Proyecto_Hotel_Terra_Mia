@@ -124,13 +124,20 @@
       margin-top: 50%;
   }
 
-  main section div p{
-      margin-top: 15%;
+  main section div .p-contacto, .p-img-icon{
       font-family: luxia;
+  }
+
+  main section div .p-contacto {
+    margin-top: 15%;
   }
 
   main section img{
       margin-top: 10%;
+  }
+
+  main section div .p-img-icon{
+    margin-top: 10px;
   }
 
   .fotos-cinta{
@@ -213,7 +220,23 @@
         .content-services, .content-contacto{
             width: 100%;
         }}    
-          
+
+    .container-us{
+        background-color: var(--colorPrimario);
+       
+    }    
+
+    .container-us h3{
+        color: var(--colorTerciario);
+    }
+
+    .img-icon{
+        width: 40px;
+        height: auto;
+        margin-top: 15px;
+        left: 40px;
+    }
+
 
 
 
