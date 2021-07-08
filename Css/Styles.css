@@ -108,7 +108,7 @@
       border: none;
   }
 
-  .titulo, .sub-titulo, .titulo-lateral,.text-grilla-contacto, .card-text{
+  .titulo, .sub-titulo, .titulo-lateral, .text-grilla-contacto, .card-text{
     font-family: luxia;
   }
 
@@ -236,6 +236,28 @@
         margin-top: 15px;
         left: 40px;
     }
+
+
+    /* Estilos de Servicios*/
+    
+
+    @media (max-width: 991px){
+        .section-services div:nth-child(4){
+            display: none;
+        }}
+    @media (max-width: 768px) {
+        .section-services div:nth-child(3){
+            display: none;
+        }
+    } 
+    @media(max-width: 450px){
+        .section-services, .titulo-lateral{
+            font-size: 25px;
+        }
+    }   
+
+    
+    
 
 
 
