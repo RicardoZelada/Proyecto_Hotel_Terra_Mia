@@ -80,13 +80,14 @@ header ul li{
     top: 5px;
 }
 
+
 header ul li a{
     position: relative;
     text-decoration: none;
     transition: 0.6s;
     padding: 5px;
     display: inline-block;
-    color: var(--colorBase_2);
+    color: var(--colorTerciario);
     text-decoration: none;
     letter-spacing: 2px;
     font-weight: 100px;
@@ -94,7 +95,7 @@ header ul li a{
     /*display: block;*/
 }
 
-header nav ul li a:before{
+header nav ul li a::before{
     position: absolute;
     content: '';
     left: 0;
@@ -102,7 +103,7 @@ header nav ul li a:before{
     height: 3px;
     width: 100%;
     text-decoration: none;
-    background-color: var(--colorBase_2);
+    background-color: var(--colorTerciario);
     transform: scaleX(0);
     transform-origin: right;
     transition: transform .4s linear;

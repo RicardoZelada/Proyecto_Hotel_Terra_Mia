@@ -121,7 +121,7 @@
   }
 
   .titulo-lateral{
-      margin-top: 50%;
+      /*margin-top: 50%;*/
   }
 
   main section div .p-contacto, .p-img-icon{
@@ -144,6 +144,12 @@
       width: 20%;
       height: auto;
       border: var(--colorSecundario);
+  }
+
+  @media(max-width:850px){
+      .container-fotos-cinta, .fotos-cinta:nth-child(5){
+        display: none;
+      }
   }
 
   .card-text{
@@ -189,15 +195,33 @@
       left: 0;
   }
 
-  .content-services{
+  .content-img-services{
     background-image: url(../Img/foto_9.png);
   }
+  
+  .p-banner{
+      font-size: 1.9rem;
+      font-family: luxia;
+      text-align: center;
+      position: relative;
+      top: 25%;
+      color: var(--colorBlanco);
+  }
+  .p-services{
+      z-index: 2;
+      position: relative;
+      color:var(--colorBlanco);
+      font-family: luxia;
+      font-size: 1.4rem;
+      text-align: center;
+      top: -30%;
+  }
+
   .content-contacto{
     background-image: url(../Img/foto_10.png);
   }
 
-
-  .content-services, .content-contacto{
+  .content-img-services, .content-contacto{
       width: 70%;
       background-size: 100% 100%;
       background-repeat: no-repeat;
@@ -206,24 +230,23 @@
   }
 
   @media (max-width: 1097px){
-    .content-services, .content-contacto{
+    .content-img-services, .content-contacto{
         width: 80%;
         height: 350px;
     }}
 
     @media (max-width: 874px){
-        .content-services, .content-contacto{
+        .content-img-services, .content-contacto{
             width: 80%;
             height: 300px;
         }}
     @media (max-width: 600px){
-        .content-services, .content-contacto{
+        .content-img-services, .content-contacto{
             width: 100%;
         }}    
 
     .container-us{
         background-color: var(--colorPrimario);
-       
     }    
 
     .container-us h3{
@@ -236,9 +259,6 @@
         margin-top: 15px;
         left: 40px;
     }
-
-
-    /* Estilos de Servicios*/
     
 
     @media (max-width: 991px){
