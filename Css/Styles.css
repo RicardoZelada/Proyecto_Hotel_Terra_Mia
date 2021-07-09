@@ -276,6 +276,18 @@
         }
     }   
 
+    .content-terra-mia{
+        background-color: var(--colorPrimario);
+    }
+    section .div-terra-mia{
+        width: 100%;
+        height: 10%;
+        border-radius: 0px;
+        background: #033967;
+        box-shadow:  29px -29px 57px #022747,
+                    -29px 29px 57px #044b87;   
+    }
+
     
     
 
