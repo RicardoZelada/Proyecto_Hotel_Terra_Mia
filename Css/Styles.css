@@ -198,15 +198,31 @@
   .content-img-services{
     background-image: url(../Img/foto_9.png);
   }
-  
-  .p-banner{
-      font-size: 1.9rem;
+  .content-img-inicio{
+      background-image: url(../Img/Banner_inicio.png);
+  }
+  .content-img-inicio div h1{
+      position: relative;
+      margin-top: 10px;
+      font-family: luxia;
+      padding: 5px;
+  }
+
+  .p-banner, .p-banner-inicio{
+      font-size: 1.7rem;
       font-family: luxia;
       text-align: center;
       position: relative;
-      top: 25%;
       color: var(--colorBlanco);
   }
+  .p-banner{
+      top: 25%;
+  }
+
+  .p-banner-inicio{
+      top: 10%;
+  }
+ 
   .p-services{
       z-index: 2;
       position: relative;
@@ -221,7 +237,7 @@
     background-image: url(../Img/foto_10.png);
   }
 
-  .content-img-services, .content-contacto{
+  .content-img-services, .content-contacto, .content-img-inicio{
       width: 70%;
       background-size: 100% 100%;
       background-repeat: no-repeat;
@@ -230,18 +246,17 @@
   }
 
   @media (max-width: 1097px){
-    .content-img-services, .content-contacto{
+    .content-img-services, .content-contacto, .content-img-inicio{
         width: 80%;
         height: 350px;
     }}
 
     @media (max-width: 874px){
-        .content-img-services, .content-contacto{
+        .content-img-services, .content-contacto, .content-img-inicio{
             width: 80%;
-            height: 300px;
         }}
     @media (max-width: 600px){
-        .content-img-services, .content-contacto{
+        .content-img-services, .content-contacto, .content-img-inicio{
             width: 100%;
         }}    
 
@@ -287,10 +302,6 @@
         box-shadow:  29px -29px 57px #022747,
                     -29px 29px 57px #044b87;   
     }
-
-    
-    
-
 
 
 
