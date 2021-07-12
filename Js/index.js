@@ -41,7 +41,7 @@ function familyRoom(){
         content_2.style.transitionDelay = "0s";
         content_3.style.transitionDelay = "0.3s";
     }
-//--------------------------------------
+//-------------------Sticky
        
         window.addEventListener("scroll", function(){
         var header = document.querySelector("header");
@@ -54,31 +54,58 @@ function familyRoom(){
             })
             })
      
-//--------------------------------------
-      document.addEventListener( 'DOMContentLoaded', function () {
+//-------------------Sldider Principal Index
 		new Splide( '.splide',{
       autoplay:"true",
       type:"loop",
       width: "100%"
     } ).mount();
-	} );
 
-//--------------------------------------
-var swiper = new Swiper('.swiper-container', {
-    effect: "coverflow",
+    new Splide( '.splide_1',{
+      autoplay:"true",
+      type:"loop",
+      width: "100%"
+    } ).mount();
+
+    new Splide( '.splide_2',{
+      autoplay:"true",
+      type:"loop",
+      width: "100%"
+    } ).mount();
+	
+
+
+
+//-------------------Sldider Que Opina la Gente
+  var swiper = new Swiper('.swiper-container', {
+    effect: 'slide',
     grabCursor: true,
     centeredSlides: true,
-    slidesPerView: "auto",
-    coverflowEffect: {
-      rotate: 50,
-      stretch: 0,
-      depth: 100,
-      modifier: 1,
-      slideShadows: true,
+    slidesPerView: true,
+    autoplay: true,
+    breakpoints: {
+      '@0.50': {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      '@0.75': {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      '@1.00': {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      '@1.50': {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      },
     },
     pagination: {
-      el: ".swiper-pagination",
+      el: '.swiper-pagination',
     },
   });
 
-    
+  //-----------
+
+ 

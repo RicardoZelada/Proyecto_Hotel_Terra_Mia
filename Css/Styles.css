@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
 :root{
     --colorPrimario: #083B66;
     --colorSecundario: #B73719;
@@ -11,16 +13,8 @@
     margin: 0;
 }
 
-
-.div-reserva{
-    position:absolute;
-    top: 80%;
-    left: 25%;
-    z-index: 2;
-}
-
-.input-group{
-    height: 70px;
+.active{
+    color: var(--colorSecundario);
 }
 
 .btnCotizar{
@@ -46,7 +40,7 @@
 
   .tabs-rooms{
     width: 90%;
-    height: 500px;
+    height: 700px;/*esta propiedad me corta en div de las habitaciones*/
     position: relative;
     /*margin: 100px auto;*/
     overflow: hidden;
@@ -97,7 +91,7 @@
       height: auto;
       background-color: var(--colorPrimario);
       color: var(--colorBlanco);
-      font-family: luxia;
+      font-family: 'Nanum Gothic', sans-serif;
       border: none;
   }
 
@@ -109,23 +103,21 @@
   }
 
   .titulo, .sub-titulo, .titulo-lateral, .text-grilla-contacto, .card-text{
-    font-family: luxia;
+    /*font-family: luxia;*/
+    font-family: 'Nanum Gothic', sans-serif;
   }
 
   .titulo{
-    font-size: 1.9rem ;
+    font-size: 1.9em ;
   }
 
   .sub-titulo{
       font-size: 1.3rem;
   }
 
-  .titulo-lateral{
-      /*margin-top: 50%;*/
-  }
-
   main section div .p-contacto, .p-img-icon{
-      font-family: luxia;
+      /*font-family: luxia;*/
+      font-family: 'Nanum Gothic', sans-serif;
   }
 
   main section div .p-contacto {
@@ -166,7 +158,8 @@
       height: auto;
   }
   .text{
-      font-family: luxia;
+    font-family: 'Nanum Gothic', sans-serif;
+      /*font-family: luxia;*/
       font-size: 1.1rem;
   }
   .bg-informacion{
@@ -204,13 +197,15 @@
   .content-img-inicio div h1{
       position: relative;
       margin-top: 10px;
-      font-family: luxia;
+      font-family: 'Nanum Gothic', sans-serif;
+      /*font-family: luxia;*/
       padding: 5px;
   }
 
   .p-banner, .p-banner-inicio{
       font-size: 1.7rem;
-      font-family: luxia;
+      font-family: 'Nanum Gothic', sans-serif;
+      /*font-family: luxia;*/
       text-align: center;
       position: relative;
       color: var(--colorBlanco);
@@ -227,7 +222,8 @@
       z-index: 2;
       position: relative;
       color:var(--colorBlanco);
-      font-family: luxia;
+      font-family: 'Nanum Gothic', sans-serif;
+      /*font-family: luxia;*/
       font-size: 1.4rem;
       text-align: center;
       top: -30%;
@@ -390,7 +386,133 @@
                 }
 
         
+  .swiper-container {
+    width: 100%;
+  }
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+  }
 
+  .div-card{
+      width: 350px;
+      height: auto;
+      background: #FFFFFF;
+      box-shadow: inset 5px 5px 10px #929292,
+            inset -5px -5px 10px #ffffff;
+  }
+
+  .circulo{
+      width: 50px;
+      height: 50px;
+      border-radius: 50px 50px 50px 50px;
+      border: 2px solid var(--colorPrimario);
+      
+  }
         
-        
+ 
+/*---- SLIDER MANUAL-*/
             
+  .slider{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .slider ul{
+    display: flex;
+    width: 300%;
+    padding: 0;
+    animation: cambio 20s infinite;
+    animation-direction:alternate ;
+  }
+  
+  .slider li{
+    width: 100%;
+    list-style: none;
+  }
+  
+  .slider img{
+    width: 100%;
+  }
+  
+  @keyframes cambio {
+    0%{ margin-left: 0; }
+    20%{ margin-left: 0; }
+  
+    25%{ margin-left: -100%; }
+    45%{margin-left: -100%; }
+  
+    50%{ margin-left: -200%; }
+    70%{margin-left: -200%; }
+  
+    75%{ margin-left: -200%; }
+    100%{margin-left: -200%; }
+  }
+   
+/*--------RESERVA----------*/
+.reserva{
+    position: relative;
+}
+.card_body{
+    width: 80%;
+    opacity: 0.9;
+    border-radius: 4px;
+    z-index: 3;
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    
+}
+
+/*-------FOTO ESTATICA DEL BANNER------*/
+.seccion #foto{
+    width: 100%;
+      background-size: 90% 90%;
+      height: 88vh;
+      margin: 0 auto;
+}
+.seccion::before {
+    background-color: rgba(0, 0, 0, 0.7);
+    content: ' ';
+    position: absolute;
+    width: 50%;
+    height: 88%;
+    top: 0;
+    right: 0;
+    z-index: 2;
+  }
+
+  @media (max-width: 1300px) {
+    .seccion::before{
+        width: 80%;
+    }
+} 
+@media (max-width: 840px) {
+    .seccion::before{
+        width: 100%;
+    }.card-body{
+        top: 50%;
+    }
+} 
+
+
+/*------PAGINA CONTACTO----*/
+.container-contacto{
+    width: 80%;
+    border-radius: 0px;
+    background: #ffffff;
+    box-shadow:  20px 20px 55px #d9d9d9,
+                 -20px -20px 55px #ffffff;
+}
+
+.container-contacto-info{
+    background-color: var(--colorPrimario);
+    height: 60vh;
+}
+
+.container-contacto-info, .card-body h1:nth-child(1){
+    color: var(--colorTerciario);
+}

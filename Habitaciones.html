@@ -7,7 +7,8 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <link rel="stylesheet" href="Css/swiper.min.css">
     <link rel="stylesheet" href="Css/Header.css">
     <link rel="stylesheet" href="Css/Footer.css">
     <link rel="stylesheet" href="Css/Styles.css">
@@ -18,14 +19,15 @@
 
     <header>
       <nav> 
-          <img src="Img/Logo_Terra_Mia.png" alt="Logo">
+        <a href="index.html">
+          <img src="Img/Logo_Terra_Mia.png" alt="Logo"></a>
               <ul>
                   <li><a href="index.html">Inicio</a></li>
-                  <li><a href="Habitaciones.html">Habitaciones</a></li>
+                  <li><a class="active" href="Habitaciones.html">Habitaciones</a></li>
                   <li><a href="Servicios.html">Servicios</a></li>
                   <li><a href="Nosotros.html">Nosotros</a></li>
                   <li><a href="Contacto.html">Contacto</a></li>
-                  <a href="Login.html"><img class="user p-1 mt-1" src="Img/user.png" alt="Icono-usuario"></a>
+                  <a href="Login.html"><img class="user p-1 mt-1" src="Img/user_1.png" alt="Icono-usuario"></a>
               </ul>
       </nav>
       <div>
@@ -38,7 +40,7 @@
   <!-- Seccion Segundo Titulo-->
 <section class="container mt-5">
   <div class="row justify-content-center p-4">
-    <div class="col-lg-10 col-md-8 col-sm-12 justify-content-center">
+    <div class="col-lg-10 col-md-8 col-sm-12 justify-content-center mt-5">
       <h1 class="titulo text-center">
         TERRA MIA HOTEL - BOUTIQUE 
       </h1>
@@ -50,10 +52,120 @@
 </section>
 <!-- Fin Seccion Segundo Titulo-->
 
+<!--Seccion de Habitaciones-->
+<section class="container-lg">
+  <div class="tabs-rooms">
+    <div class="btn-box justify-content-center">
+      <button id="btn_one" class="sub-titulo" onclick="singleRoom()">Habitacion Simple</button>
+      <button id="btn_two" class="sub-titulo" onclick="dobleRoom()">Habitacion Doble</button>
+      <button id="btn_three" class="sub-titulo" onclick="familyRoom()">Habitacion Familiar</button>
+    </div>    
+
+        <div class="content container-lg mt-5 mb-5" id="content_one">
+          <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="content-left mb-2">
+                <div class="slider">
+                  <ul>
+                    <li><img class="img-thumbnail" src="Img/hotel-terra-mia-24.jpg" alt=""></li>
+                    <li><img class="img-thumbnail" src="Img/hotel-terra-mia-25.jpg" alt=""></li>
+                    <li><img class="img-thumbnail" src="Img/hotel-terra-mia-10.jpg" alt=""></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="content-right mx-2">
+                <h1 class="titulo">Habitacion Simple</h1>
+                <p class="text p-0">Habitación simple con todo los comodidad que necesita nuestros pasajeros.</p>
+                <hr class="btn-box">
+                <p class="text p-0">Capacidad estandar - 2 personas</p>
+                <hr class="btn-box">
+                <p class="text p-0">No se puede fumar en las habitaciones.
+                  Cada habitación cuenta con baño privado, TV – Cable, Wifi, Aire Acondicionado
+                </p>
+                <h3 class="text-danger titulo">Desde $ 49.000</h3>
+                <div class="text-end">
+                  <a href="Login.html">
+                    <button type="submit" class="p-1 btn-submit">La Quiero</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content container-lg mt-5 mb-5" id="content_two">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="content-left mb-2">
+                <div class="slider">
+                  <ul>
+                    <li><img class="img-thumbnail" src="Img/hotel-terra-mia-24.jpg" alt=""></li>
+                    <li><img class="img-thumbnail" src="Img/hotel-terra-mia-25.jpg" alt=""></li>
+                    <li><img class="img-thumbnail" src="Img/hotel-terra-mia-10.jpg" alt=""></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="content-right mx-2">
+                <h1 class="titulo">Habitacion Doble</h1>
+                <p class="text p-0">Habitación doble con todo los comodidad que necesita nuestros pasajeros.</p>
+                <hr class="btn-box">
+                <p class="text p-0">Capacidad estandar - 3 personas</p>
+                <hr class="btn-box">
+                <p class="text p-0">No se puede fumar en las habitaciones.
+                  Cada habitación cuenta con baño privado, TV – Cable, Wifi, Aire Acondicionado
+                </p>
+                <h3 class="text-danger titulo">Desde $ 59.000</h3>
+                <div class="text-end">
+                  <a href="Login.html">
+                    <button type="submit" class="p-1 btn-submit">La Quiero</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content container-lg mt-5 mb-5" id="content_three">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="content-left mb-2">
+                <div class="slider">
+                  <ul>
+                    <li><img class="img-thumbnail" src="Img/hotel-terra-mia-24.jpg" alt=""></li>
+                    <li><img class="img-thumbnail" src="Img/hotel-terra-mia-25.jpg" alt=""></li>
+                    <li><img class="img-thumbnail" src="Img/hotel-terra-mia-10.jpg" alt=""></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="content-right mx-2">
+                <h1 class="titulo">Habitacion Familiar</h1>
+                <p class="text p-0">Habitación familiar con todo los comodidad que necesita su familia.</p>
+                <hr class="btn-box">
+                <p class="text p-0">Capacidad estandar - 4 personas y mas</p>
+                <hr class="btn-box">
+                <p class="text p-0">No se puede fumar en las habitaciones.
+                  Cada habitación cuenta con baño privado, TV – Cable, Wifi, Aire Acondicionado
+                </p>
+                <h3 class="text-danger titulo">Desde $ 69.000</h3>
+                <div class="text-end">
+                  <a href="Login.html">
+                    <button type="submit" class="p-1 btn-submit">La Quiero</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+</section>
+<!--Fin Seccion de Habitaciones-->
+
 
 <!-- Seccion Nuestro Alrededor-->
-
-<main class="container-us container-fluid">
+<main class="container-us container-fluid mt-5">
   <section class="container-xxl">
     <div class="row justify-content-center" >
       <div class="col-md-3 col-sm-12 mt-3">
@@ -95,8 +207,77 @@
 </main>
 <!-- Fin Seccion Nuestro Alrededor-->
 
+<!--Seccion Que dicen los clientes-->
+<section class="container mt-5">
+  <div class="row justify-content-center p-4">
+    <div class="col-lg-10 col-md-8 col-sm-12 justify-content-center">
+      <h1 class="titulo text-center">
+        LO QUE DICEN NUESTROS CLIENTES
+      </h1>
+    </div>
+  </div>
+</section>
+
+<section class="container-fluid p-5">
+  <div class="swiper-container overflow-hidden">
+    <div class="swiper-wrapper d-flex">
+      <div class="swiper-slide p-2 justify-content-center">
+            <div class="card div-card">
+              <div class="card-body">
+                <nav class="d-flex justify-content-between"><div class="circulo"><p class="py-2 text text-center">R</p></div><h5 class="card-title p-3">Ricardo</h5><div class="circulo bg-info"><p class="py-2 text text-center text-white">9,8</p></div></nav>
+                <p class="card-text">“La atención, es muy acogedor y tranquilo, atienden muy bien. Lo recomiendo
+                   y me alojare allí cada vez que valla a San antonio”</p>
+              </div>
+            </div>
+      </div>
+      <div class="swiper-slide p-2">
+        <div class="card div-card">
+          <div class="card-body">
+            <nav class="d-flex justify-content-between"><div class="circulo"><p class="py-2 text text-center">A</p></div><h5 class="card-title p-3">Aldo</h5><div class="circulo bg-warning"><p class="py-2 text text-center text-white">9,0</p></div></nav>
+            <p class="card-text">“Muy buena atención de sus dueños, el desayuno bastante bueno y suficiente, 
+              mesas con una excelente vista al puerto. Habitación amplia y limpia.”</p>
+          </div>
+        </div>
+    </div>
+      <div class="swiper-slide p-2">
+        <div class="card div-card">
+          <div class="card-body">
+            <nav class="d-flex justify-content-between"><div class="circulo"><p class="py-2 text text-center">M</p></div><h5 class="card-title p-3">Maria</h5><div class="circulo bg-success"><p class="py-2 text text-center text-white">8,7</p></div></nav>
+            <p class="card-text">“La amabilidad de Rodrigo, su dueño, excelente anfitrión, el desayuno estupendo 
+              y variado, una vista espectacular.”</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide p-2">
+        <div class="card div-card">
+          <div class="card-body">
+            <nav class="d-flex justify-content-between"><div class="circulo"><p class="py-2 text text-center">E</p></div><h5 class="card-title p-3">Elisa</h5><div class="circulo bg-danger"><p class="py-2 text text-center text-white">8,2</p></div></nav>
+            <p class="card-text">“La ubicación es lo mejor, esta cerca de todos los puntos de interes. Bellas instalaciones, 
+              comodas y buenos anfitriones.”</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide p-2">
+        <div class="card div-card">
+          <div class="card-body">
+            <nav class="d-flex justify-content-between"><div class="circulo"><p class="py-2 text text-center">E</p></div><h5 class="card-title p-3">Pedro</h5><div class="circulo bg-primary"><p class="py-2 text text-center text-white">9,0</p></div></nav>
+            <p class="card-text">“Todo muy limpio y cómodo, el dueño muy amable, atendió todas nuestras 
+              peticiones y consultas, ofrece Netflix gratuito en todas las habitaciones.”</p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <nav class="d-flex"><div class="circulo"><p class="py-2 text text-center">9,1</p></div><h5 class="card-title p-3">Fabuloso - 199 comentarios </h5></nav>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+ 
+</section> 
+<!-- Fin Seccion que dicen los clientes-->
+
 <!--Seccion Fotos-->
-<section class="container-fluid bg-light mb-5 mt-5">
+<section class="container-fluid bg-light mb-5">
   <div class="d-flex container-fotos-cinta">
     <div class="row g-1 justify-content-center">
       <div class="box-img-services col-6 col-lg-3 col-md-6 col-sm-6">
@@ -193,13 +374,6 @@
       </p> 
     </div> 
 </main>
-
-
-
-
-
-
-
 <!-- Fin Seccion Camas para niños-->
 
 
@@ -303,16 +477,24 @@
           <div class="bd-highlight"><p class="mb-0">21 de mayo 280 | San Antonio</p></div>
             <div class="row align-items-center p-3">
               <div class="col text-center">
-                <img class="icons-rrss" src="Img/RRSS/booking_com_icon_logo.png" alt="iconoBooking">
+                <a href="https://api.whatsapp.com/send?phone=56992945084&app=facebook&entry_point=page_cta">
+                  <img class="icons-rrss" src="Img/RRSS/Whatsapp.png" alt="iconoBooking"></a>
+                </div>
+              <div class="col text-center">
+                <a href="https://www.instagram.com/hotelterramia/?hl=es">
+                <img class="icons-rrss" src="Img/RRSS/booking_com_icon_logo.png" alt="iconoBooking"></a>
               </div>
               <div class="col text-center">
-                <img class="icons-rrss" src="Img/RRSS/Facebook.png" alt="iconoFacebook">
+                <a href="https://www.facebook.com/hotelterramia/">
+                <img class="icons-rrss" src="Img/RRSS/Facebook.png" alt="iconoFacebook"></a>
               </div>
               <div class="col text-center">
-                <img class="icons-rrss" src="Img/RRSS/Instagram.png" alt="iconoInstagram">
+                <a href="https://www.booking.com/hotel/cl/terra-mia.es.html">
+                <img class="icons-rrss" src="Img/RRSS/Instagram.png" alt="iconoInstagram"></a>
               </div>
               <div class="col text-center">
-                <img class="icons-rrss" src="Img/RRSS/tripadvisor-logotype.png" alt="iconotripadvisor">
+                <a href="https://www.tripadvisor.cl/Hotel_Review-g1136530-d11774029-Reviews-Hotel_Terra_Mia-San_Antonio_Valparaiso_Region.html">
+                <img class="icons-rrss" src="Img/RRSS/tripadvisor-logotype.png" alt="iconotripadvisor"></a>
               </div>
             </div>  
         </div>
@@ -354,9 +536,9 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-    <script src="fontawesome-free-5.15.1-web/js/all.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <script src="Js/swiper.min.js"></script>
     <script src="Js/index.js"></script>
 
     
